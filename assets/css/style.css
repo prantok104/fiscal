@@ -1,0 +1,2736 @@
+/*
+*******************************************
+*******************************************
+
+Template Name: Paisa - Consulting Business, Finance HTML5 Template
+Author: Shadhin Ahmed
+Version: 1.0
+Template By: XpertsTheme
+
+* This file contains the styling for the actual theme, this is the file you need to edit to change the look of the theme.
+
+This files contents are outlined below >>>>
+
+*** SEARCH EACH SECTION AS IT COMMENTS, YOU WILL GET THE RIGHT SECTION.
+
+*******************************************
+*******************************************
+
+==== CSS INDEX
+
+01 - IMPORTED CSS
+02 - DEFAULT CSS
+03 - BREADCROMB CSS
+04 - BTN TO TOP CSS
+05 - PAGINATION CSS
+06 - HEADER TOP CSS
+07 - HEADER CSS
+08 - SLIDE AREA CSS
+09 - WHO WE ARE AREA CSS
+10 - ABOUT AREA CSS
+11 - QUOTES AREA CSS
+12 - REVIEW AREA CSS
+13 - ADVISOR AREA CSS
+14 - FEATURED AREA CSS
+15 - GRAPH AREA CSS
+16 - SERVICES AREA CSS
+17 - PROJECT PAGE CSS
+18 - NEWS PAGE CSS
+19 - NEWS SIDEBAR CSS
+20 - SINGLE NEWS PAGE CSS
+21 - SHOP PAGE CSS
+22 - SINGLE SHOP PAGE CSS
+23 - CART PAGE CSS
+24 - CHECKOUT PAGE CSS
+25 - MYACCOUNT PAGE CSS
+26 - CONTACT PAGE ONE CSS
+27 - CONTACT PAGE TWO CSS
+28 - CONTACT PAGE THREE CSS
+29 - FOOTER AREA CSS
+30 - SITE PRELOADER CSS
+31 - REPONSIVE MENU CSS
+32 - COLOR CHANGE CSS
+*/
+
+/*================================================
+01 - IMPORTED CSS
+==================================================*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,700i');
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700');
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+
+/*================================================
+02 - DEFAULT CSS
+==================================================*/ 
+
+body {
+    font-size: 15px;
+    line-height: 26px;
+    color: #444;
+    
+    font-weight: 400
+}
+html,body { 
+    height: 100%
+}
+img {
+    max-width: 100%;
+    height: auto
+}
+a,a:focus,a:hover{
+    text-decoration: none;
+    outline: none;
+    transition: all .4s ease
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+a{
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    color: inherit
+}
+a:focus {
+    text-decoration: none;
+    outline: medium none;
+    color: inherit
+}
+a:hover {
+    color: inherit;
+    text-decoration: none;
+    color: inherit
+}
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+.clear{
+    clear: both
+}
+.fiscal-btn {
+    border: 2px solid;
+    color: #fff;
+    display: inline-block;
+    font-weight: 700;
+    padding: 7px 25px;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.fiscal-btn:after {
+    content: "";
+    height: 100%;
+    left: 50%;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    width: 0;
+    z-index: -1;
+    transition: all .4s cubic-bezier(1, 1.24, .29, -0.39) 0s
+}
+.fiscal-btn:hover{
+    color: #fff
+}
+.fiscal-btn:hover:after{
+    width: 100%;
+    left: 0;
+}
+
+.fiscal-btn.primary:hover {
+    color: #fff;
+}
+.fiscal-btn.white {
+    border-color: #fff;
+    color: #fff;
+}
+.fiscal-btn.white:hover {
+    color: #000
+}
+.fiscal-btn.white:after {
+    background: none repeat scroll 0 0 #fff;
+}
+.section-title {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    text-transform: capitalize;
+    display: inline-block
+}
+.section-title:after {
+    bottom: 0;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 30%;
+}
+.fix{
+    overflow: hidden
+}
+.no-padding{
+    padding: 0px
+}
+.section-padding{
+    padding: 100px 0;
+}
+.section_50{
+    padding: 50px 0;
+}
+.padding-bottom{
+    padding-bottom: 100px;
+}
+.padding-top{
+    padding-top: 100px;
+}
+.section-margin{
+    margin:100px 0;
+}
+.margin-top{
+    margin-top: 100px;
+}
+.margin-bottom{
+    margin-bottom: 100px;
+}
+
+/*================================================
+03 - BREADCROMB CSS
+==================================================*/ 
+.fiscal-breadcromb-area {
+    background: url("../img/small.jpg") repeat scroll center center / cover  rgba(0, 0, 0, 0);
+    overflow-x: hidden;
+    position: relative;
+    z-index: 1;
+}
+.fiscal-breadcromb-area:after {
+    background: none repeat scroll 0 0 #000;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.fiscal-breadcromb-area .overlay {
+    left: auto;
+    right: -200px;
+    transform: skewX(-45deg);
+    width: 50%;
+}
+.breadcromb-left {
+    text-align: left;
+}
+.breadcromb-right {
+    position: relative;
+    text-align: right;
+    z-index: 9;
+}
+.breadcromb-left > h3 {
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.breadcromb-right li {
+    display: inline-block;
+    margin: 0 3px;
+    text-transform: capitalize;
+    color: #fff
+}
+.breadcromb-right a {
+    color: #fff;
+}
+.breadcromb-right a i{
+    margin-right: 5px;
+    color: #fff 
+}
+.breadcromb-right a:hover{
+    color: #fff 
+}
+/*================================================
+04 - BTN TO TOP CSS
+==================================================*/
+
+.btntoTop:before {
+    color: #fff;
+    content: "\f106";
+    display: inline-block;
+    font: 20px "FontAwesome";
+    vertical-align: middle;
+}
+.btntoTop {
+    border: 2px solid;
+    border-radius: 2px;
+    bottom: 30px;
+    cursor: pointer;
+    height: 44px;
+    line-height: 36px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: fixed;
+    right: 30px;
+    text-align: center;
+    -webkit-transition: opacity 0.4s ease 0s;
+    transition: opacity 0.4s ease 0s;
+    width: 44px;
+    z-index: 999;
+}
+.btntoTop.active {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s
+}
+.btntoTop.active:hover {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 2px solid;
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+/*================================================
+05 - PAGINATION CSS
+==================================================*/ 
+
+.pagination-box {
+    text-align: center;
+}
+.pagination a {
+    color: #555 !important;
+    border: 1px solid #009688  !important
+}
+.pagination .active > a, .pagination a:hover {
+    color: #fff !important
+}
+
+/*================================================
+06 - HEADER TOP CSS
+==================================================*/
+
+header.fiscal-header-top-area {
+    background: none repeat scroll 0 0 #212121;
+    color: #fff;
+    padding: 15px 0;
+}
+.fiscal-lang select {
+    color: #000;
+    margin-left: 20px;
+    padding: 3px 10px;
+}
+.fiscal-header-contact p i.fa {
+    margin-right: 10px;
+}
+.fiscal-header-contact p a {
+    color: #fff;
+    margin: 0 10px;
+}
+.fiscal-header-contact p {
+    margin-bottom: 0;
+}
+.fiscal-lang > p {
+    margin: 0;
+}
+.fiscal-header-area.sticky.stuck {
+    background: none repeat scroll 0 0 #fff;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.logo-overlay {
+    height: 100%;
+    left: -200px;
+    position: absolute;
+    top: 0;
+    transform: skewX(45deg);
+    width: 45%;
+}
+.fiscal-logo a {
+    color: #fff;
+    font-weight: 700;
+    position: relative;
+    text-transform: uppercase;
+}
+.fiscal-logo h2 > a:before {
+    background: none repeat scroll 0 0 #fff;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.fiscal-logo h2 > a:after {
+    background: #fff none repeat scroll 0 0;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+/*================================================
+07 - HEADER CSS
+==================================================*/
+section.fiscal-header-area {
+    padding: 20px 0;
+    position: relative;
+}
+.logo-overlay, .overlay {
+  height: 100%;
+  left: -200px;
+  position: absolute;
+  top: 0;
+  transform: skewX(45deg);
+  width: 45%;
+}
+.fiscal-logo {
+    padding: 6px 0;
+}
+.fiscal-search-box {
+    position: relative;
+}
+.fiscal-search-box a {
+    color: #000;
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+}
+.fiscal-search-box a i {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    font-size: 15px;
+}
+.fiscal-mainmenu ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+.fiscal-mainmenu ul li {
+    display: inline-block;
+    position: relative;
+}
+.fiscal-mainmenu ul li a {
+    color: #000;
+    display: block;
+    font-size: 16px;
+    padding: 10px 15px;
+    text-transform: capitalize;
+}
+
+
+.fiscal-mainmenu ul .current-page-item > a, .fiscal-mainmenu ul li a:hover {
+    color: #009688;
+}
+
+.fiscal-mainmenu ul li ul{
+    background:#2b2c36 none repeat scroll 0 0;
+    border-top: 5px solid;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    top: 100%;
+    -webkit-transform:scaleY(0);
+    transform:scaleY(0);
+    -webkit-transform-origin: 50% 0 0;
+    transform-origin: 50% 0 0;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    visibility: hidden;
+    width: 215px;
+    text-align: left;
+    z-index: 99
+}
+.fiscal-mainmenu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform:scaleY(1);
+    transform:scaleY(1);
+    -webkit-transition-timing-function: cubic-bezier(.52, 1.64, .85, .92);
+    transition-timing-function: cubic-bezier(.52, 1.64, .85, .92)
+}
+.fiscal-mainmenu ul li:nth-last-child(-n+2) ul {
+    left: auto;
+    right: 0;
+}
+.fiscal-mainmenu ul li ul li {
+    border-bottom: 1px solid #555;
+    display: block;
+}
+
+.fiscal-mainmenu ul li a i {
+    margin-left: 7px;
+}
+
+.fiscal-mainmenu ul li:hover ul li a{
+    color: #fff
+}
+
+.search_box_container > form {
+    border: 1px solid #ddd;
+    height: 45px;
+    position: relative;
+}
+.search_box_container input {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #000;
+    height: 100%;
+    padding: 5px 100px 5px 10px;
+    width: 100%;
+}
+.search_box_container button[type="submit"] {
+    border: medium none;
+    color: #fff;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.4s ease 0s;
+    width: 20%;
+}
+.search_box_container {
+    background: none repeat scroll 0 0 #fff;
+    margin: auto;
+    padding: 50px;
+    position: relative;
+    width: 50%;
+    display: none
+}
+.mfp-content .search_box_container{
+display: block
+}
+.single-slide-item {
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+    height: 450px;
+    position: relative;
+    z-index: 1;
+}
+.single-slide-item:after {
+    background: none repeat scroll 0 0 #000;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+/*================================================
+08 - SLIDE AREA CSS
+==================================================*/
+.slide-caption-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.slide-caption-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.slide-caption {
+    text-align: center;
+}
+.slide-caption h4 {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.slide-caption > h2 {
+    font-size: 30px;
+    margin: 5px 0;
+    text-transform: uppercase;
+}
+.slide-caption > p {
+    font-size: 16px;
+}
+.slide-caption a.fiscal-btn {
+    color: #fff;
+    margin-top: 30px;
+}
+.fiscal-slider-carousel .owl-nav button {
+    border: 1px solid #fff;
+    height: 40px;
+    left: 50px;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s ease
+}
+.fiscal-slider-carousel:hover .owl-nav button{
+    visibility: visible;
+    opacity: 1;
+}
+.fiscal-slider-carousel .owl-nav button i.fa {
+    border-radius: 50%;
+    color: #fff;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    opacity: .5;
+    transition: all .4s ease
+}
+.fiscal-slider-carousel .owl-nav button:hover i{
+    opacity: 1
+}
+.fiscal-slider-carousel .owl-nav button.owl-next{
+    left: auto;
+    right: 50px
+}
+/*================================================
+09 - WHO WE ARE AREA CSS
+==================================================*/
+.who-left {
+    margin-right: 15px;
+    padding: 30px;
+    color: #fff;
+}
+.who-left h3 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+.who-left > p {
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.who-right {
+    margin-left: 15px;
+}
+.col-md-6:nth-child(1) .single-item, .col-md-6:nth-child(2) .single-item {
+    margin-top: 0;
+}
+.single-item {
+    margin-top: 40px;
+    width: auto;
+}
+.icon {
+    float: left;
+    text-align: center;
+    width: 20%;
+}
+.icon i {
+    font-size: 40px;
+}
+.single-content-box {
+    display: inline-block;
+    width: 80%;
+}
+.single-content-box > h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.single-content-box > p {
+    line-height: 1.5;
+    margin: 0;
+}
+/*================================================
+10 - ABOUT AREA CSS
+==================================================*/
+.fiscal-about-text {
+    color: #fff;
+    margin-right: 30px;
+}
+.fiscal-about-image {
+    margin-left: 30px;
+    overflow: hidden;
+    3: both
+}
+.fiscal-about-image img{
+    transition: all .5s ease 0s;
+    transform: scale(1)
+}
+.fiscal-about-image:hover img{
+    transform: scale(1.2)
+}
+.display-table {
+    display: table;
+    height: 302px;
+}
+.who-right {
+    display: table-cell;
+    vertical-align: middle;
+}
+.fiscal-about-us {
+    position: relative;
+    width: 50%;
+}
+.fiscal-about-us-area .overlay {
+    left: auto;
+    right: 40%;
+    transform: skewX(0deg);
+    width: 1000%;
+}
+.fiscal-about-text > h4 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.fiscal-about-us-area {
+    background: rgba(0, 0, 0, 0) url("../img/about.jpg") repeat scroll right top / 65% auto;
+    padding: 100px 0;
+    position: relative;
+    transition: all .4s ease 0s;
+    z-index: 1
+}
+.fiscal-about-us-area::after {
+    background: #000 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.fiscal-about-us-area:hover{
+    background-size: 80%
+}
+/*================================================
+11 - QUOTES AREA CSS
+==================================================*/
+.fiscal-quotes-area {
+    background: rgba(0, 0, 0, 0) url("../img/pattern.png") repeat fixed 0 0;
+    clear: both;
+    position: relative;
+    z-index: 1;
+}
+.fiscal-quotes-area::after {
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.fiscal-qoutes {
+    color: #fff;
+    margin: auto;
+    width: 65%;
+}
+.fiscal-qoutes h2 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.fiscal-qoutes a {
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.single-service{
+    margin-top: 40px;
+}
+/*================================================
+12 - REVIEW AREA CSS
+==================================================*/
+.fiscal-review-area {
+    background: none repeat scroll 0 0 #ecf1f7;
+}
+.fiscal-review {
+    margin: auto;
+    width: 75%;
+}
+.review-carousel {
+    margin-top: 50px;
+    position: relative;
+}
+.client-image {
+    border-radius: 50%;
+    float: left;
+    margin-right: 45px;
+    position: relative;
+    text-align: center;
+    width: 17%;
+}
+.client-image > img {
+    border-radius: 50%;
+}
+.client-image:after {
+    border-radius: 50%;
+    color: #fff;
+    content: "\f10d";    
+    font-size: 25px;
+    padding: 5px 13px;
+    position: absolute;
+    right: -20px;
+    top: 0;
+}
+.client-review > p {
+    line-height: 1.5;
+}
+.client-review > h3 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+.client-review > h4 {
+    color: #ea713d;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.fiscal-review .owl-dots {
+    text-align: center;
+}
+.fiscal-review .owl-dots button {
+    background: none repeat scroll 0 0 red;
+    bottom: 0;
+    height: 5px;
+    margin: 0 4px;
+    width: 20px;
+    transition: all .4s ease 0s
+}
+.fiscal-review .owl-dots button.active {
+    width: 45px
+}
+
+
+.review-carousel .owl-nav button {
+    bottom: -30px;
+    height: 40px;
+    left: 46%;
+    margin-left: -20px;
+    margin-top: -20px;
+    position: absolute;
+    width: 40px;
+}
+.review-carousel .owl-nav button i.fa {
+    color: #fff;
+    font-size: 20px;
+    height: 40px;
+    line-height: 38px;
+    width: 40px;
+}
+.review-carousel .owl-nav button.owl-next {
+    left: auto;
+    right: 45%;
+}
+
+/*================================================
+13 - ADVISOR AREA CSS
+==================================================*/
+.single-member {
+    border: 1px solid #eee;
+    border-radius: 23px;
+    box-shadow: 0 8px 18px 0 #ddd;
+    padding-bottom: 25px;
+}
+.member-image {
+    background-position: center top;
+    background-size: cover;
+    height: 250px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    
+}
+.member-image:after {
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    transform: perspective(700px) rotateX(90deg);
+    transition: all .4s cubic-bezier(.05, 1.31, .99, -0.25) 0s;
+    visibility: hidden
+}
+.member-content {
+    padding: 0 20px;
+}
+.member-content a {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+}
+.member-content > h2 {
+    line-height: normal;
+}
+.member-content > h4 {
+    color: #888;
+    font-size: 13px;
+    margin: 7px 0;
+}
+.members-lists{
+    margin-top: 50px;
+}
+.member-social {
+    height: 30px;
+    left: 0;
+    line-height: 30px;
+    margin-top: -15px;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    visibility: hidden;
+    width: 100%;transform: perspective(700px) rotateX(90deg);
+    transition: all .4s cubic-bezier(.7, .37, .79, -0.11) 0s
+}
+.single-member:hover .member-social{
+    visibility: visible;
+    opacity: 1;transform: perspective(700px) rotateX(0deg);
+}
+.single-member:hover .member-image:after{
+    transform: perspective(700px) rotateX(0deg);
+    visibility: visible
+}
+.member-social a {
+    display: inline-block;
+}
+.member-social a i {
+    background: none repeat scroll 0 0 #fff;
+    padding: 8px 11px;
+    transition: all .4s ease 0s
+}
+.member-social a i:hover{
+    transform: rotate(360deg)
+}
+/*================================================
+14 - FEATURED AREA CSS
+==================================================*/
+
+.fiscal-featured-area {
+    background: none repeat scroll 0 0 #ededed;
+}
+.single-projects::before {
+    background: #1e88e5 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 50px;
+    left: 0;
+    position: absolute;
+    width: 0px;
+    transition: 0.4s ease-in-out
+}
+.single-projects::after {
+    background: #1e88e5 none repeat scroll 0 0;
+    top: 0;
+    content: "";
+    height: 50px;
+    right: 0;
+    position: absolute;
+    width: 0px;
+    transition: 0.4s ease-in-out
+}
+.single-projects {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 30px 0;
+    box-shadow: 0 8px 9px 0 #999;
+    margin-top: 50px;
+    padding: 10px;
+    position: relative;
+    transition: 0.4s ease-in-out
+}
+.project-image {
+    background-position: center center;
+    background-size: cover;
+    height: 200px;
+    position: relative;
+    z-index: 1;
+}
+.project-image:after {
+    background: none repeat scroll 0 0 #000;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    transition: all .4s ease 0s;
+    transform: perspective(700px) rotateX(90deg);
+    visibility: hidden;
+}
+.single-projects:hover .project-image:after{
+    transform: perspective(700px) rotateX(0deg);
+    visibility: visible;
+}
+.single-projects:hover.single-projects::before, .single-projects:hover.single-projects::after{
+    width: 50px;
+}
+.project-content > h2 a {
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.project-content > h4 {
+    color: #888;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+.project-content {
+    background: #000 none repeat scroll 0 0;
+    bottom: 0px;
+    color: #fff;
+    opacity: 0;
+    padding: 5px 10px;
+    position: absolute;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    z-index: 99;
+    visibility: hidden;
+    transform: perspective(700px) rotateX(-90deg);
+}
+.single-projects:hover .project-content {
+    margin-bottom: 12px;
+    opacity: 1;
+    transform: perspective(700px) rotateX(0deg);
+    visibility: visible;
+    width: 92%;
+}
+.project-content > p {
+    text-align: justify;
+}
+.project-more {
+    height: 40px;
+    left: 0;
+    line-height: 35px;
+    margin-top: -20px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    transition: all .4s ease 0s;
+    transform: perspective(700px) rotateX(90deg);
+    visibility: hidden;
+}
+.single-projects:hover .project-more{
+    transform: perspective(700px) rotateX(0deg);
+    visibility: visible;
+}
+.project-more a i {
+    color: #fff;
+    font-size: 16px;
+    padding: 9px 15px;
+}
+
+
+
+/*================================================
+15 - GRAPH AREA CSS
+==================================================*/
+.fiscal-graph {
+    margin-top: 50px;
+}
+.fiscal-graph-chart {
+    margin-right: 30px;
+}
+.single-vission {
+    margin-bottom: 35px;
+    overflow: hidden
+}
+.vission-content > h3 {
+    color: #000;
+    font-size: 26px;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+.single-vission .icon i {
+    font-size: 45px;
+}
+.fiscal-graph-area {
+    background: none repeat scroll 0 0 #ebf1f6;
+}
+
+
+/*================================================
+16 - SERVICES AREA CSS
+==================================================*/
+.single-service-left {
+    margin-right: 15px
+}
+.single-service-right{
+    margin-left: 15px;
+    margin-top: 0;
+}
+.single-service-widget li {
+    border-bottom: 3px solid #fff;
+}
+.single-service-widget a {
+    background: #f7f7f7 none repeat scroll 0 0;
+    color: #333;
+    display: block;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    border-left: 5px solid #f7f7f7
+}
+.single-service-widget a:hover, .single-service-widget ul li.active > a {
+    border-left: 5px solid #000;
+    background: #009688 none repeat scroll 0 0;
+    color: #fff
+}
+.single-service-widget a i {
+    float: right;
+    font-size: 20px;
+    margin-top: 2px;
+}
+.single-service-widget {
+    margin-bottom: 50px;
+}
+.single-service-widget:last-child{
+    margin-bottom: 0px
+}
+.widget-title > h3{
+    color: #444444;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.widget-title {
+    margin-bottom: 25px;
+}
+.broucher-item i {
+    background: #fff none repeat scroll 0 0;
+    color: #009688;
+    font-size: 20px;
+    height: 30px;
+    left: 14px;
+    line-height: 30px;
+    position: absolute;
+    text-align: center;
+    top: 8px;
+    width: 30px;
+}
+.broucher-item > a {
+    background: #009688 none repeat scroll 0 0;
+    border-left: 0 none;
+    color: #fff;
+    padding-left: 60px;
+}
+.broucher-item > a:hover{
+    border-left: 0px
+}
+.broucher-item {
+    margin: 10px 0;
+    position: relative;
+}
+.broucher-item a span {
+    color: #fff;
+    float: right;
+    margin-top: 5px;
+}
+.single-service-widget > form {
+    background: #f7f7f7 none repeat scroll 0 0;
+    padding: 20px;
+}
+.single-service-widget form p label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.single-service-widget input {
+    border: 1px solid #ddd;
+    height: 40px;
+    padding: 5px 10px;
+    width: 100%;
+}
+.single-service-widget form p textarea {
+    border: 1px solid #ddd;
+    height: 80px;
+    padding: 5px 10px;
+    width: 100%;
+}
+.single-service-widget form p button[type="submit"] {
+    background: #009688 none repeat scroll 0 0;
+    border: 1px solid #009688;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 17px;
+    padding: 12px 18px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 100%;
+}
+.single-service-widget form p button[type="submit"]:hover {
+    background: #0b776d none repeat scroll 0 0;
+}
+.single-service-slider{
+    background: #f7f7f7 none repeat scroll 0 0;
+    padding: 20px 30px;
+}   
+.service-slider-item h4 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 23px
+}
+.service-slider-item h5 {
+    color: #009688;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.single-service-slider .owl-dots {
+    margin-top: 10px;
+}
+.audit-text, .audit-chart, .single-shop-tab {
+    margin-top: 30px;
+}
+
+.main-content h3 {
+    color: #000;
+    font-size: 35px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-transform: capitalize;
+}   
+.main-content p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0 0 10px;
+}
+#chartContainer{
+    height: 340px;
+    width: 100%
+}
+.canvasjs-chart-credit {
+    display: none;
+}
+.fiscal-tabs{
+    margin: 30px 0;
+}
+.tab-content-box {
+    margin-left: 15px;
+}
+
+.nav-tabs > li > a{
+    border: 0px
+}
+#pro_2 a {
+    background: #eee none repeat scroll 0 0;
+    border-radius: 0;
+    color: #000;
+    margin: 0;
+    text-transform: capitalize;
+    border-left: 5px solid #eee
+}
+#pro_2 .active > a {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #009688 none repeat scroll 0 0;
+    border-color: currentcolor currentcolor currentcolor #000;
+    -o-border-image: none;
+    border-image: none;
+    border-style: none none none solid;
+    border-width: medium medium medium 5px;
+    color: #fff;
+}
+#pro_2 > li {
+    float: none;
+    margin: 2px;
+}
+#pro_2{
+    border: medium none;
+    margin-bottom: 0
+}
+.panel-body {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #ddd;
+}
+
+/*================================================
+17 - PROJECT PAGE CSS
+==================================================*/
+
+.project-btn {
+    display: block;
+    margin: 30px 0;
+    text-align: center;
+}
+.project-btn > a {
+    color: #555;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 15px;
+}
+.project-btn > a.current {
+    cursor: default;
+}
+.project-btn > a:hover, .project-btn > a.current{
+    color: #009688
+}
+.element-item {
+    float: left;
+    margin: 30px 0 0;
+    padding: 0 15px;
+    width: 33.33%;
+}
+.project-single-item{
+    position: relative;
+    overflow: hidden
+}
+.img-responsive{
+    width: 100%
+}
+.project-img-overlay {
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 150, 136, 0.52) 27%, rgba(0, 150, 136, 0.93) 71%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 150, 136, 0.52) 27%, rgba(0, 150, 136, 0.93) 71%) repeat scroll 0 0;
+    bottom: -30px;
+    color: #fff;
+    font-size: 14px;
+    left: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    padding: 50px 15px 15px;
+    position: absolute;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    visibility: hidden;
+    width: 100%;
+    z-index: -1;
+}
+.project-single-item:hover .project-img-overlay{
+    bottom: 0;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+    z-index: 9
+}
+.project-img-overlay p, .project-img-overlay h4{
+    color: #fff;
+    font-weight: 500;
+    text-transform: capitalize
+}
+.fiscal-related-project-area {
+    background: #f7f7f7 none repeat scroll 0 0;
+}
+.fiscal-related-project{
+    margin-top: 50px
+}
+/*================================================
+18 - NEWS PAGE CSS
+==================================================*/
+
+article.single-news-element {
+    border-bottom: 2px dotted #888;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+article.single-news-element:last-child {
+    border-bottom:0;
+    margin: 0;
+    padding: 0
+}
+.fiscal-single-news-element .main-content, .fiscal-single-news-element .news-meta {
+    padding: 0 50px;
+}
+.featured-image{
+    position: relative;
+   margin-bottom: 15px
+}
+.featured-image a {
+    display: block;
+}
+.featured-image .overlay {
+    border: 6px double #fff;
+    height: 98%;
+    left: 1%;
+    opacity: 0;
+    top: 1%;
+    transform: skewX(0deg);
+    transition: all 0.4s ease 0s;
+    visibility: hidden;
+    width: 98%;
+    z-index: 1;
+}
+.featured-image:hover .overlay{
+    visibility: visible;
+    opacity: .5
+}
+.featured-image img {
+    width: 100%;
+}
+.main-content h2 a {
+    color: #000;
+    display: inline-block;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.fiscal-single-news-element .news-meta {
+    margin-top: 20px;
+}
+.news-meta{
+    margin-top: 20px;
+}
+.news-meta {
+    color: #000;
+}
+.news-meta h4 {
+    display: inline-block;
+    margin-right: 5px;
+}
+.news-meta a i {
+    color: #fff;
+    padding: 6px 10px;
+}
+.news-meta h4 span {
+    font-weight: 700;
+    margin-left: 7px;
+}
+.news-count h4 {
+    margin-left: 15px;
+}
+.fiscal-news-list {
+    margin-bottom: 50px;
+}
+.fiscal-news-list .featured-image {
+    margin: 0 20px 0 0;
+}
+.fiscal-news-grid .single-news-element {
+    padding-bottom: 12px;
+}
+.fiscal-news-grid .single-news-element .main-content .fiscal-btn {
+    font-size: 13px;
+    margin-top: 10px;
+}
+.fiscal-news-grid  article.single-news-element:last-child {
+    border-bottom: 2px dotted #888;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+.fiscal-news-grid .news-meta h4 {
+    font-size: 15px;
+}
+.fiscal-news-grid .news-meta a i {
+    font-size: 12px;
+    padding: 5px 7px;
+}
+
+/*================================================
+19 - NEWS SIDEBAR CSS
+==================================================*/
+
+.news-single-widget {
+    background: #f9f9f9 none repeat scroll 0 0;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+.fiscal-news-sidebar {
+    margin-top: 0px;
+}
+.news-single-widget:last-child{
+    margin-bottom: 0px
+}
+.news-single-widget > form {
+    position: relative;
+    height: 40px
+}
+.news-single-widget input[type="search"] {
+    background: #fff none repeat scroll 0 0;
+    border: medium none;
+    height: 40px;
+    padding: 5px 60px 5px 10px;
+    width: 100%;
+}
+.news-single-widget form > button{
+    border: medium none;
+    color: #fff;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    width: 20%;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    top: 0
+}
+.news-single-widget button:hover {
+    background: #0b776d none repeat scroll 0 0;
+}
+.news-single-widget > h3 {
+    background: #242c42 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.blog-catagory li {
+    border-bottom: 2px solid #fff;
+}
+.blog-catagory li:last-child{
+    border-bottom: 0px solid #fff;
+}
+.blog-catagory li a {
+    color: #444;
+    display: block;
+    padding: 10px 20px;
+    text-transform: capitalize;
+}
+
+.blog-catagory span {
+    float: right;
+}   
+.Tags-catagory > li {
+    display: inline-block;
+    margin: 4px 2px;
+}
+.Tags-catagory > li > a {
+    background: #fff none repeat scroll 0 0;
+    display: block;
+    padding: 5px 10px;
+    text-transform: capitalize;
+}
+.Tags-catagory > li > a:hover{
+    background: #009688 none repeat scroll 0 0;
+    color: #fff
+}
+.single-popular-post {
+    border-bottom: 2px solid #fff;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+.single-popular-post:last-child{
+    border-bottom: 0px solid #fff;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.single-popular-post a > i {
+    color: #009688;
+    font-size: 20px;
+    margin-right: 5px;
+}
+.single-popular-post > a {
+    color: #555;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize
+}
+.single-popular-post > a:hover{
+    color: #009688;
+}
+.single-popular-post > p {
+    color: #555;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+/*================================================
+20 - SINGLE NEWS PAGE CSS
+==================================================*/
+
+.fiscal-single-news-content > h3 {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.fiscal-single-news-content {
+    margin-top: 35px;
+}
+blockquote {
+    background: #d5e8e6 none repeat scroll 0 0;
+    border-left: 0 none;
+    color: #354a6b;
+    font-style: italic;
+    font-weight: 400;
+    margin: 50px 0;
+    padding: 50px;
+    position: relative;
+}
+.fiscal-single-news-content blockquote .fa-quote-left {
+    left: 20px;
+    position: absolute;
+    top: 20px;
+    color: #009688 
+}
+.fiscal-single-news-content blockquote .fa-quote-right {
+    bottom: 20px;
+    position: absolute;
+    right: 20px;
+    color: #009688 
+}
+.fiscal-single-news-content > ul {
+    margin: 50px 0;
+
+}
+.fiscal-single-news-content ul li i {
+    color: #009688;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.fiscal-single-news-content li {
+    margin: 10px 0;
+}
+.single-news-author {
+    border-bottom: 1px solid #ddd;
+    margin: 40px 0;
+    padding: 40px 0;
+}
+.news-author-img > img {
+    height: 100%;
+    width: 100%;
+}
+.news-author-text > h4 {
+    margin-bottom: 10px;
+}
+.news-author-text {
+    padding: 10px;
+}
+.single-news-comment {
+    margin-top: 40px;
+    padding-top: 25px;
+}
+.comment-list {
+    margin-top: 40px;
+}
+.single-comment-item {
+    background: #f9f9f9 none repeat scroll 0 0;
+    margin: 10px 0;
+    padding:30px 10px
+}
+.fiscal-comment-item h4 {
+    color: #555;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.single-comment-item img {
+    display: block;
+    margin: 0 auto;
+}
+.fiscal-comment-item span {
+    color: #777;
+    font-size: 13px;
+}
+.fiscal-comment-item a {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.fiscal-comment-item a:hover{
+    color: #333
+}
+.comment-list ul ul {
+    margin-left: 100px;
+}
+.single-comment-item p {
+    color: #555;
+}
+.fiscal-leave-comment {
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+.fiscal-leave-comment > h3 {
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.fiscal-leave-comment input[type="text"], .fiscal-leave-comment input[type="email"] {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    float: left;
+    height: 45px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-top: 0;
+    padding: 10px 15px;
+    width: 45%;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s
+}
+.fiscal-leave-comment textarea {
+    border: 1px solid #ddd;
+    height: 160px;
+    margin-bottom: 20px;
+    padding: 5px 15px;
+    width: 93%;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s
+}
+.fiscal-leave-comment input:focus, .fiscal-leave-comment textarea:focus{
+    border: 1px solid #009688 ; 
+}
+.fiscal-leave-comment button {
+    border: 1px solid #009688;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 17px;
+    padding: 12px 18px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+/*================================================
+21 - SHOP PAGE CSS
+==================================================*/
+.shorting-left {
+    font-size: 12px;
+}
+.shorting-right select, .shorting-right select option {
+    font-size: 12px;
+    padding: 4px 10px;
+    text-transform: capitalize;
+}
+.fiscal-single-product{
+    border: 1px solid #ddd;
+    margin-top: 25px;
+}
+.product-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #F2F2F2;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.product-image:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: #000;
+    z-index: -1;
+    opacity: 0;
+    transition: all .4s ease 0s;
+    transform: perspective(700px) rotateY(90deg);
+    visibility: hidden    
+}
+.fiscal-single-product:hover .product-image:after{
+    visibility: visible;
+    opacity: .5;
+    transform: rotateY(0deg)
+}
+.fiscal-single-product:hover .details-btn{
+    visibility: visible;
+    opacity: 1;
+    transform: rotateX(0deg)
+}
+.details-btn {
+    height: 30px;
+    line-height: 30px;
+    margin-top: -15px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    z-index: 2;
+    transition: all .4s ease 0s;
+    transform: perspective(700px) rotateX(90deg);
+    visibility: hidden 
+}
+.details-btn a i {
+    border-radius: 50%;
+    color: #fff;
+    padding: 8px 10px;
+}
+.product-price {
+    color: #fff;
+    font-weight: bold;
+    left: -38px;
+    padding-bottom: 8px;
+    padding-top: 25px;
+    position: absolute;
+    text-align: center;
+    top: -12px;
+    transform: rotate(-45deg);
+    width: 110px;
+}
+.product-content {    
+    padding: 15px;
+    text-align: center;
+}
+.product-content h2 a {
+    display: block;
+    font-size: 17px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+.product-content h2 {
+    line-height: 1;
+}
+.product-content a.fiscal-btn {
+    font-size: 11px;
+    padding: 2px 15px;
+}
+
+
+/*================================================
+22 - SINGLE SHOP PAGE CSS
+==================================================*/
+.fiscal-single-product-details {
+    margin-bottom: 30px;
+}
+.product-details-content > h2 {
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.fiscal-single-product-details{
+    margin-bottom: 30px;
+}
+.product-details-content > h2 {
+    color: #000;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.category-shop {    
+    font-weight: 700;
+    margin: 25px 0;
+}
+.category-shop > p {
+    margin-right: 25px;
+    text-transform: capitalize;
+}
+.category-shop a {
+    font-weight: 700;
+}
+
+.single-shop-price > h4 {
+    border-bottom: 1px solid #ddd;
+    color: #000;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+.shop-quantity {
+    margin-top: 25px;
+}
+.shop-quantity form input {
+    padding: 5px 13px;
+}
+.shop-quantity a {
+    color: #fff;
+    display: block;
+    font-weight: 700;
+    margin-left: 15px;
+    padding: 8px 12px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.product-description-review {
+    margin-bottom: 25px;
+}
+.product-description-review .tabs li a {
+    background: #f2f2f2 none repeat scroll 0 0;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all .4s ease 0s
+}
+.product-description-review .tabs li.active a, .product-description-review .tabs li a:hover {
+    color: #fff;
+}
+.related-product-box > h3 {
+    border-bottom: 1px solid;
+    display: inline-block;
+    font-size: 25px;
+    padding-bottom: 15px;
+    text-transform: capitalize;
+}
+
+/*================================================
+23 - CART PAGE CSS
+==================================================*/
+
+.cart-table {
+    overflow-x: auto;
+}
+.cart-table table thead > tr:nth-of-type(2n+1), .calculate-shipping-right table tbody > tr:nth-of-type(2n+1){
+    background: #f4f4f4  none repeat scroll 0 0;
+}
+.cart-table table thead th, .calculate-shipping-right table thead th {
+    text-transform: uppercase;
+}
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    border-bottom: 0 solid #ddd;
+    border-top: 0 solid #ddd;
+    vertical-align: middle;
+}
+.cart-table thead th, .calculate-shipping-right thead th {
+    padding: 15px 20px !important;
+}
+.cart-table tbody td, .calculate-shipping-right tbody td {
+    padding: 15px 20px !important;
+}
+.fiscal-cart-close {
+    text-align: center;
+}
+.fiscal-cart-close > a:hover{
+    color: #e9563d
+}
+.fiscal-cart-preview img {
+    height: 60px;
+    width: 60px;
+}
+.cart-table tbody td p {
+    text-transform: capitalize;
+}
+.fiscal-cart-quantity > input {
+    border: 1px solid #ddd;
+    padding: 5px;
+    width: 70px;    
+}
+.fiscal-cart-product p {
+    font-weight: 500;
+    display: inline-block
+}
+.fiscal-cart-product a:hover{
+    color: #009688 
+}
+.cart-table table tbody > tr:nth-of-type(2n+2), .calculate-shipping-right table tbody > tr:nth-of-type(2n+2) {
+    background: #f9f9f9 none repeat scroll 0 0;
+}
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+    background-color: #fff;
+}
+.fiscal-update-cart {
+    margin-top: 30px;
+}
+.coupon-cart-left {
+    text-align: left;
+}
+.coupon-cart-right {
+    text-align: right;
+}
+.coupon-cart-left input[type="text"] {
+    background: #eee none repeat scroll 0 0;
+    border: medium none;
+    height: 50px;
+    padding: 10px 15px;
+    width: 45%;
+}
+.coupon-cart-left input[type="submit"] {
+    border: medium none;
+    color: #fff;
+    font-weight: 600;
+    height: 50px;
+    margin-left: 10px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.coupon-cart-right > a {
+    color: #fff;
+    display: inline-block;
+    font-weight: 600;
+    margin-right: 50px;
+    margin-top: 0;
+    padding: 12px 20px;
+    text-transform: uppercase;
+}
+.calculate-shipping-left, .calculate-shipping-right {
+    margin-top: 50px;
+}
+.calculate-shipping-left select {
+    border: 1px solid #ddd;
+    height: 45px;
+    padding: 5px;
+    text-transform: capitalize;
+    width: 100%;
+}
+.calculate-shipping-left select option {
+    padding: 5px 10px;
+}
+.single-shipping input {
+    border: 1px solid #ddd;
+    height: 45px;
+    padding: 5px 10px;
+    width: 100%;
+    margin: 0
+}
+.single-shipping {
+    margin-top: 10px;
+}
+.calculate-shipping-left > form {
+    margin-top: 25px;
+}
+.calculate-shipping-right{
+    overflow-x: auto;
+}
+.calculate-shipping-right > table {
+    width: 100%;
+    margin-top: 25px;
+}
+.single-shipping button {
+    border: 1px solid #009688;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 17px;
+    padding: 15px 20px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.proceed-checkout > a {
+    color: #fff;
+    display: inline-block;
+    font-weight: 600;
+    margin-right: 50px;
+    margin-top: 0;
+    padding: 12px 20px;
+    text-transform: uppercase;
+}
+.proceed-checkout {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/*================================================
+24 - CHECKOUT PAGE CSS
+==================================================*/
+
+.fiscal-checkout-form > form {
+    margin-top: 30px;
+}
+.checkout-form-right {
+    margin-top: 0px;
+}
+.fiscal-checkout-form > h3, .checkout-bottom h3, .fiscal-register > h3, .fiscal-login > h3 {
+    color: #444444;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.checkout-form label {
+    color: #555;
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize
+}
+.checkout-form input {
+    border: 1px solid #ddd;
+    height: 45px;
+    padding: 5px 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.checkout-form textarea {
+    border: 1px solid #ddd;
+    height: 105px;
+    padding: 10px;
+    width: 100%;
+}
+.checkout-cart-table {
+    margin-top: 50px;
+}
+.payment h4 {
+    color: #333;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+.payment {
+    margin-top: 15px;
+}
+.checkout-cart-table > table {
+    margin-top: 25px;
+}
+.payment > img {
+    float: right;
+}
+
+/*================================================
+25 - MYACCOUNT PAGE CSS
+==================================================*/
+
+.fiscal-register > form, .fiscal-login > form {
+    background: #f9f9f9 none repeat scroll 0 0;
+    padding: 30px;
+}
+.register-form label {
+    color: #333;
+    display: inline-block;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.account-form-group > input {
+    border: medium none;
+    height: 100%;
+    left: 0;
+    padding: 5px 10px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.account-form-group {
+    border: 1px solid #ddd;
+    height: 45px;
+    position: relative;
+    margin-bottom: 20px
+}
+.account-form-group i {
+    color: #aaa;
+    font-size: 18px;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+}
+.fiscal-login {
+    margin-top: 0px;
+}
+.register-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+.register-form-btn{
+    text-align: center
+}
+.register-form-btn button {
+    border: 1px solid #009688;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 17px;
+    padding: 12px 18px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.register-form a {
+    float: right;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.register-form a:hover{
+    color: #009688
+}
+
+.form-group.small-field {
+    width: 90%;
+}
+.fiscal-checkout-form {
+    margin-right: 15px;
+}
+.fiscal-checkout-form.checkout-form-right {
+    margin-left: 15px;
+    margin-right: 0;
+}
+.checkout-cart .checkout-cart-table {
+    margin-right: 15px;
+    margin-top: 50px;
+}
+.checkout-cart .calculate-shipping-right {
+    margin-left: 15px;
+    overflow-x: auto;
+}
+
+/*================================================
+26 - CONTACT PAGE ONE CSS
+==================================================*/
+
+.contact-top-details {
+    margin-bottom: 20px;
+}
+.contact-top-details > h3, .fiscal-contact-desc > h3, .contact3-left-form > h3, .contact3-page-details > h3 {
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 10px
+}
+.contact-page-form  > form {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+    margin-top: 30px;
+    padding: 30px 50px;
+}
+.contact-page-form form label, .contact3-left-form form label{
+    color: #333;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.contact-page-form form p input[type="text"], .contact-page-form form p input[type="email"]{
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    height: 40px;
+    padding: 5px 10px;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+.contact-page-form form p input:focus, .contact-page-form form textarea:focus{
+    border: 1px solid #009688 ;
+}
+.contact-page-form form textarea {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    height: 120px;
+    padding: 5px 10px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 100%;
+}
+.contact-page-form form p button {
+    border: 1px solid;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 17px;
+    padding: 12px 18px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.contact-page-form form p {
+    margin-top: 15px;
+}
+.contact-page-right {
+    margin-top: 30px;
+}
+.contact-page-right h4 i {
+    margin-right: 5px
+}
+.single-contact-right {
+    margin-bottom: 0px
+}
+.contact-page-right h4 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 10px
+}
+.contact-page-right p > a:hover{
+    color: #009688
+}
+.weekly-subscribe {
+    margin-top: 50px;
+}
+.weekly-subscribe form {
+    position: relative;
+    width: 100%;
+    height: 40px
+}
+.weekly-subscribe form input[type="text"] {
+    border: 1px solid #ddd;
+    color: #000;
+    height: 100%;
+    padding: 5px 90px 5px 10px;
+    width: 100%;
+}
+.weekly-subscribe form button {
+    border: medium none;
+    color: #fff;
+    font-size: 20px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 18%;
+    top: 0
+}
+.weekly-subscribe form {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.get-connected-with {
+    margin-top: 40px;
+}
+.get-connected-with ul{
+    margin-top: 20px
+}
+.get-connected-with li {
+    display: inline-block;
+    margin: 0px 5px;
+}
+.get-connected-with a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+    background: #eee;
+    color: #555;
+}
+.get-connected-with a:hover{
+    color: #fff
+}
+#googleMap {
+    width: 100%;
+    height: 370px;
+}
+
+/*================================================
+27 - CONTACT PAGE TWO CSS
+==================================================*/
+
+.fiscal-contact-form-right{
+    margin-top: 0
+}
+.fiscal-contact-desc {
+    margin-bottom: 50px;
+}
+.single-contact-left:first-child {
+    margin-top: 0;
+}
+.single-contact-left {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+    margin-top: 29px;
+    padding: 20px;
+}
+.contact-icon {
+    background: #f9f9f9 none repeat scroll 0 0;
+    display: table-cell;
+    float: left;
+    font-size: 30px;
+    height: 75px;
+    line-height: 75px;
+    margin-right: 10px;
+    text-align: center;
+    width: 75px;
+}
+.contact-text > h4 {
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.contact-text > p {
+    font-size: 15px;
+    line-height: 26px;
+}   
+.contact-text > span {
+    color: #333;
+}
+.fiscal-contact-form-right > form {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+    padding: 30px 50px;
+    margin-top: 0
+}
+.fiscal-contact-form-right form p {
+    margin: 10px 0;
+}
+.fiscal-contact-form-right input {
+    background: #fafafa none repeat scroll 0 0;
+    border: medium none;
+    height: 45px;
+    padding: 5px 10px;
+    width: 100%;
+}
+.fiscal-contact-form-right textarea {
+    background: #fafafa none repeat scroll 0 0;
+    border: medium none;
+    height: 120px;
+    padding: 5px 10px;
+    width: 100%;
+}
+.fiscal-contact-form-right button {
+    border: 1px solid;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 17px;
+    padding: 12px 18px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+/*================================================
+28 - CONTACT PAGE THREE CSS
+==================================================*/
+
+.contact3-page-details {
+    margin-top: 40px;
+}
+.contact-left-form > form {
+    margin-top: 30px;
+}
+.contact3-left-form input{
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    height: 45px;
+    padding: 5px 10px;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+.contact3-left-form form input:focus, .contact3-left-form form textarea:focus{
+    border: 1px solid #009688 ;
+}
+.contact3-left-form form textarea {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    height: 120px;
+    padding: 5px 10px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 100%;
+}
+.contact3-left-form form p {
+    margin-top: 15px;
+}
+.contact3-left-form button{
+    border: 1px solid;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 17px;
+    padding: 12px 18px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;    
+}
+.contact-para {
+    margin-top: 30px;
+}
+.contact-para > p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.contact-para p i {
+    font-size: 18px;
+    line-height: 30px;
+    margin-right: 10px;
+    text-align: center;
+    width: 20px;
+}
+.contact-para p > span {
+    color: #000;
+    display: inline-block;
+    width: 75px;
+    font-weight: 600
+}
+.contact-para a:hover{
+    color: #009688;
+}
+/*================================================
+29 - FOOTER AREA CSS
+==================================================*/
+footer.fiscal-footer-area {
+    background: none repeat scroll 0 0 #252525;
+    color: #fff;
+}
+.single-footer-widget {
+    margin: 0 15px;
+}
+.single-footer-widget > h2 {
+    border-bottom: 2px solid #ddd;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 11px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+.single-footer-widget > ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.single-footer-widget li {
+    display: block;
+    line-height: 2.2;
+}
+.single-footer-widget a {
+    color: #fff;
+}
+.footer-bottom {
+    padding-top: 50px;
+}
+.footer-bottom > p {
+    margin: 0;
+    text-align: center;
+}
+/*================================================
+30 - SITE PRELOADER CSS
+==================================================*/
+
+.fiscal-site-preloader {
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+}
+.sk-cube-grid {
+    height: 40px;
+    left: 50%;
+    margin: -20px 0 0 -20px;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    -webkit-transition: .5s;
+    transition: .5s;    
+}
+
+.sk-cube-grid .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: #fff;
+    float: left;
+    -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+    animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+}
+.sk-cube-grid .sk-cube1 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube2 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s; }
+.sk-cube-grid .sk-cube8 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s; }
+
+@keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    } 35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1); 
+    }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    } 35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1); 
+    }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    } 35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1);
+    } 
+}
+/*================================================
+31 - REPONSIVE MENU CSS
+==================================================*/ 
+.fiscal-responsive-menu{
+    display: none;
+    margin-top: 17px;
+    position: relative;
+    width: 100%;
+    z-index: 999;
+}
+.slicknav_menu {
+    display:none;
+}
+.slicknav_nav a{
+    font-size: 16px;
+    margin: 0;
+    text-transform: capitalize;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    color: #000
+}
+.slicknav_menu {
+    padding: 0;
+    background: none
+}
+.slicknav_btn {
+    line-height: 0;
+    margin: 0;
+    float: none;
+    display: inline-block
+}
+.slicknav_btn:before, .slicknav_btn:after{
+    display: none
+}
+.slicknav_menutxt {
+    display: none !important;
+}
+.slicknav_arrow {
+    float: right;
+    color: #000
+}
+.slicknav_nav a:hover{
+    border-radius: 0;
+}
+.slicknav_nav .slicknav_row:hover{
+    border-radius: 0
+}
+.slicknav_nav a:hover, .slicknav_nav .slicknav_row:hover {
+    background: #009688 none repeat scroll 0 0;
+    color: #fff !important
+}
+.slicknav_nav li {
+    border-bottom: 1px solid #aaa;
+}
+.slicknav_nav li:last-child{
+    border-bottom: 0px solid #aaa
+}
+.slicknav_menu ul li a i {
+    display: none;
+}
+.slicknav_nav {
+    background: #fff none repeat scroll 0 0;
+    border-top: 1px solid #009688 ;
+}
+.slicknav_menu .slicknav_icon {
+    float: none !important;
+    margin: 0
+}
+.slicknav_icon-bar {
+    height: 3px !important;
+    margin: 5px 0;
+    width: 30px !important;
+}
+.slicknav_menu .slicknav_icon-bar {
+    background-color: #fff ;
+}
+.slicknav_nav .slicknav_row, .slicknav_nav a {
+    margin: 0;
+    padding: 5px;
+}
+/*================================================
+32 - FONT FAMILY CSS
+==================================================*/ 
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.client-image:after{
+    font-family: "FontAwesome";
+}
+.widget-title > h3, 
+.service-slider-item h4,
+.project-img-overlay p, .project-img-overlay h4,
+.fiscal-single-news-content > h3,
+.fiscal-checkout-form > h3, .checkout-bottom h3, 
+.fiscal-register > h3, .fiscal-login > h3{
+    font-family: "Poppins",sans-serif;
+}
+blockquote{
+    font-family: "Playfair Display",serif;
+}
+/*================================================
+33 - COLOR CHANGE CSS
+==================================================*/ 
+.fiscal-btn, .btntoTop, 
+.btntoTop.active:hover,
+.fiscal-mainmenu ul li ul,
+.contact-page-form form p button,
+.fiscal-contact-form-right button,
+.contact3-left-form button{
+    border-color: #1E88E5
+}
+.fiscal-btn.primary,
+.fiscal-mainmenu ul li a:hover,
+.fiscal-mainmenu ul li:hover a, 
+.fiscal-mainmenu ul li:hover ul li a:hover,
+.icon i,
+.client-review > h3,
+.member-social a i,
+.footer-bottom p a,
+.single-footer-widget a:hover, .btntoTop.active.btntoTop:hover::before,
+.news-meta h4 span,
+.fiscal-comment-item a,
+.single-popular-post > p > span,
+.blog-catagory li a:hover,
+.category-shop a,
+.contact-page-right h4 i,
+.contact-icon,
+.contact-para p i{
+    color: #1E88E5
+}
+.fiscal-btn:after,
+.section-title:after,
+.logo-overlay,
+.logo-overlay, .overlay,
+.fiscal-slider-carousel .owl-nav button i.fa,
+.who-left,
+.client-image:after,
+.fiscal-review .owl-dots button.active,
+.review-carousel .owl-nav button,
+.review-carousel .owl-nav button i.fa,
+.member-image:after,
+.project-more a i,
+.featured-image .overlay,
+.news-meta a i,
+.details-btn a i,
+.product-price,
+.fiscal-site-preloader,
+.fiscal-quotes-area::after,
+.btntoTop,
+.search_box_container button[type="submit"],
+.pagination .active > a, .pagination-box .pagination a:hover,
+.fiscal-leave-comment button,
+.news-single-widget form > button,
+.shop-quantity a,
+.product-description-review .tabs li.active a,
+.product-description-review .tabs li a:hover,
+.coupon-cart-left input[type="submit"],
+.coupon-cart-right > a,
+.single-shipping button,
+.proceed-checkout > a,
+.register-form-btn button,
+.weekly-subscribe form button,
+.get-connected-with a:hover,
+.contact-page-form form p button,
+.fiscal-contact-form-right button,
+.contact3-left-form button{
+    background-color: #1E88E5
+}
